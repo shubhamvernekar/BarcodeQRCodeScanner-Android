@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@android:color/holo_blue_light">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:id="@+id/ll">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/androidMode"
+            android:background="@android:color/holo_blue_dark"
+            android:layout_marginRight="8dp"
+            android:text="Android\nMode"
+           android:textSize="20sp"
+            android:fontFamily="monospace"
+            android:textColor="@android:color/white"
+            android:onClick="androidMode"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pcMode"
+            android:background="@android:color/holo_blue_dark"
+            android:layout_marginLeft="8dp"
+            android:text="Office\nMode"
+            android:textSize="20sp"
+            android:fontFamily="monospace"
+            android:textColor="@android:color/white"
+            android:onClick="offliceMode"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:text="Instructions :-"
+            android:textColor="@android:color/holo_red_dark"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="*In Android Mode :- Scan the Barcode/QRcode and return its value."/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="In Office Mode :- \n Step 1: First connect your app with your google spreadsheet (i.e. through your Google SpreadSheet id). \n Step 2: Scan the Barcode/QRcode and the value will be stored in your google spreadsheet"/>
+    </LinearLayout>
+</RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
